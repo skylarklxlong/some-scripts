@@ -1,6 +1,5 @@
 # Shadowrocket Config: 2020-12-08
-# 作者 Skylark 
-# 收集自各位大佬
+# 作者 Skylark
 [General]
 bypass-system = true
 dns-server = system, 119.29.29.29, 114.114.114.114, 223.5.5.5, 1.2.4.8
@@ -317,7 +316,6 @@ BoxJs = type=http-request,script-path=https://gitee.com/chavyleung/scripts/raw/m
 淘宝比价2 = type=http-response,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,max-size=1048576,requires-body=true,timeout=10,enable=false
 获取京东Cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, enable=true
 京东多合一签到 = type=cron,cronexpr="5 0 * * *",timeout=20,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, enable=true
-京东手机狂欢城 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_818.js, cronexp=1 0-18/6 * * *,timeout=20,enable=false
 京豆变动通知 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_change.js, cronexpr="2 9 * * *",timeout=440,enable=true
 领京豆额外奖励 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js, cronexpr="10 7 * * *", timeout=200, enable=true
 京小超领蓝币 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_blueCoin.js,cronexpr="11 0 * * *",timeout=20,enable=true
@@ -341,7 +339,6 @@ BoxJs = type=http-request,script-path=https://gitee.com/chavyleung/scripts/raw/m
 京东快递签到 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js, cronexpr="10 0 * * *", timeout=200, enable=true
 直播红包雨 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js, cronexpr="0 0,9,11,13,15,17,19,20,21,23 * * *", timeout=200, enable=true
 京东抽奖机 = type=cron,script-path=https://raw.githubusercontent.com/xingliuchao/jd/main/jd_lotteryMachine.js,cronexpr="1 0 * * *",timeout=10,enable=true
-热8超级盲盒 = type=cron,cronexp=1 0,1-23/3 * * *,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_mohe.js,enable=false
 京东摇钱树 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_moneyTree.js,cronexpr="3 */2 * * *",timeout=20,enable=true
 秒杀红包雨 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js, cronexpr="10 7 * * *", timeout=200, enable=true
 京东点点卷 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_necklace.js,cronexpr="10 0,20 * * *",timeout=200,enable=true
@@ -358,7 +355,6 @@ BoxJs = type=http-request,script-path=https://gitee.com/chavyleung/scripts/raw/m
 东东超市 = type=cron,cronexp="11 1-23/5 * * *",timeout=320,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_superMarket.js, enable=true
 京东十元街 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_syj.js, cronexpr="10 7 * * *", timeout=200, enable=true
 取关京东店铺商品 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unsubscribe.js,cronexpr="55 23 * * *",timeout=20,enable=true
-京东星推官 = type=cron,cronexp=2 0 * * *,timeout=320,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_xtg.js,enable=false
 京东大作战 = type=cron,script-path=https://raw.githubusercontent.com/799953468/Quantumult-X/master/Scripts/JD/jd_paopao.js,cronexpr="2 0 * * *",timeout=10,enable=true
 京东金融-天天提鹅 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_daily_egg.js,cronexpr="12 * * * *",timeout=10,enable=true
 京东特权值 = type=cron,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/jdtqz.js,cronexpr="0 */3 * * *",timeout=10,enable=true
@@ -374,7 +370,7 @@ BoxJs = type=http-request,script-path=https://gitee.com/chavyleung/scripts/raw/m
 企鹅读书时长 = type=http-request,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js,pattern=https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid?,max-size=131072,requires-body=true,timeout=10,enable=true
 企鹅读书 = type=cron,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js,cronexpr="* 12 * * *",timeout=10,enable=true
 机场签到(使用BoxJs配置订阅及密码) = type=cron,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkin_env.js,cronexpr="2 0 * * *",timeout=10,enable=true
-网易云获取Cookie = type=http-request,pattern=^https:\/\/music.163.com\/weapi\/user\/level,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,script-update-interval=0
+网易云获取Cookie = type=http-request,pattern=^https:\/\/music.163.com\/weapi\/user\/level,max-size=131072,requires-body=true,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,script-update-interval=0
 网易云签到 = type=cron,cronexpr="10 0 0 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,enable=ture
 中国移动Cookie 1 = type=http-request,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js,pattern=^http:\/\/wx.10086.cn\/website\/taskCenter\/sign\?,max-size=131072,timeout=10,enable=true
 中国移动Cookie 2 = type=http-request,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js,pattern=http:\/\/wx.10086.cn\/website\/taskCenter\/index\?,max-size=131072,timeout=10,enable=true
