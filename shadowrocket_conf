@@ -2,7 +2,7 @@
 # 作者 Skylark
 [General]
 bypass-system = true
-dns-server = system, 119.29.29.29, 114.114.114.114, 223.5.5.5, 1.2.4.8
+dns-server = system, 119.29.29.29, 114.114.114.114, 223.5.5.5, 1.2.4.8, 223.6.6.6
 bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, *.crashlytics.com, *.edu.cn, captive.apple.com
 update-url = https://raw.githubusercontent.com/skylarklxlong/some-scripts/master/shadowrocket_conf
@@ -320,14 +320,15 @@ FINAL,PROXY
 京东全民开红包 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_redPacket.js,cronexpr="9 0 * * *",timeout=20,enable=true
 京豆变动通知 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_change.js,cronexpr="2 9 * * *",timeout=440,enable=true
 京喜签到 = type=cron,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jingxi.js,cronexpr="0 9 * * *",timeout=10,enable=true
-酷我音乐SVIP(1) = type=http-response,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),max-size=131072,requires-body=true,timeout=10,enable=true
-酷我音乐SVIP(2) = type=http-request,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/KuWoMusicDownload.js,pattern=^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+,max-size=131072,timeout=10,enable=true
-淘宝比价1 Lite(通知版) = type=http-response,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,max-size=131072,requires-body=true,timeout=10,enable=true
-淘宝比价2 Lite(通知版) = type=http-request,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js,pattern=^http://.+/amdc/mobileDispatch,max-size=131072,requires-body=true,timeout=10,enable=true
+酷我音乐SVIP(1) = type=http-response,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),max-size=1048576,requires-body=true,timeout=10,enable=true
+酷我音乐SVIP(2) = type=http-request,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/KuWoMusicDownload.js,pattern=^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+,max-size=1048576,timeout=10,enable=true
+淘宝比价1 Lite(通知版) = type=http-response,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,max-size=1048576,requires-body=true,timeout=10,enable=true
+淘宝比价2 Lite(通知版) = type=http-request,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js,pattern=^http://.+/amdc/mobileDispatch,max-size=1048576,requires-body=true,timeout=10,enable=true
 京东比价 = type=http-response,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),max-size=1048576,requires-body=true,timeout=10,enable=true
 淘宝比价1 = type=http-request,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,pattern=^http://.+/amdc/mobileDispatch,max-size=1048576,requires-body=true,timeout=10,enable=false
 淘宝比价2 = type=http-response,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,max-size=1048576,requires-body=true,timeout=10,enable=false
-
+WxRead = type=http-response,script-path=https://raw.githubusercontent.com/skylarklxlong/some-scripts/master/wxread.js,pattern=^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary,max-size=1048576,requires-body=true,timeout=10,enable=true
+Gbhome = type=http-response,script-path=https://raw.githubusercontent.com/skylarklxlong/some-scripts/master/gbhome.js,pattern=^https:\/\/admin\.gbhome\.com\/api\/v4\/common\/3in1\/discovery,max-size=1048576,requires-body=true,timeout=10,enable=true
 
 [MITM]
 ca-passphrase = Shadowrocket
