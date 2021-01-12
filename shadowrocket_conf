@@ -309,17 +309,17 @@ FINAL,PROXY
 [Script]
 微博 = type=http-response,requires-body=true,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua),max-size=1048576,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js,enable=true
 微博去广告 = type=http-response,requires-body=true,max-size=1048576,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list|photo/info),script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js,enable=true
-获取京东Cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, enable=true
-京东多合一签到 = type=cron,cronexpr="5 0 * * *",timeout=20,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, enable=true
-东东农场 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_fruit.js,cronexpr="5 6-18/6 * * *",timeout=20,enable=true
-东东萌宠 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pet.js,cronexpr="5 6-18/6 * * *",timeout=20,enable=true
-京东种豆得豆 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_plantBean.js,cronexpr="1 7-21/2 * * *",timeout=20,enable=true
-取关京东店铺商品 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unsubscribe.js,cronexpr="55 23 * * *",timeout=20,enable=true
-进店领豆 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_shop.js,cronexpr="10 0 * * *",timeout=20,enable=true
-京东摇京豆 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_club_lottery.js,cronexpr="5 0 * * *",timeout=20,enable=true
-京东全民开红包 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_redPacket.js,cronexpr="9 0 * * *",timeout=20,enable=true
-京豆变动通知 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_change.js,cronexpr="2 9 * * *",timeout=440,enable=true
-京喜签到 = type=cron,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jingxi.js,cronexpr="0 9 * * *",timeout=10,enable=true
+获取京东Cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, enable=false
+京东多合一签到 = type=cron,cronexpr="5 0 * * *",timeout=20,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, enable=false
+东东农场 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_fruit.js,cronexpr="5 6-18/6 * * *",timeout=20,enable=false
+东东萌宠 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pet.js,cronexpr="5 6-18/6 * * *",timeout=20,enable=false
+京东种豆得豆 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_plantBean.js,cronexpr="1 7-21/2 * * *",timeout=20,enable=false
+取关京东店铺商品 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unsubscribe.js,cronexpr="55 23 * * *",timeout=20,enable=false
+进店领豆 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_shop.js,cronexpr="10 0 * * *",timeout=20,enable=false
+京东摇京豆 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_club_lottery.js,cronexpr="5 0 * * *",timeout=20,enable=false
+京东全民开红包 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_redPacket.js,cronexpr="9 0 * * *",timeout=20,enable=false
+京豆变动通知 = type=cron,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_change.js,cronexpr="2 9 * * *",timeout=440,enable=false
+京喜签到 = type=cron,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jingxi.js,cronexpr="0 9 * * *",timeout=10,enable=false
 酷我音乐SVIP(1) = type=http-response,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),max-size=1048576,requires-body=true,timeout=10,enable=true
 酷我音乐SVIP(2) = type=http-request,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/KuWoMusicDownload.js,pattern=^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+,max-size=1048576,timeout=10,enable=true
 淘宝比价1 Lite(通知版) = type=http-response,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,max-size=1048576,requires-body=true,timeout=10,enable=true
